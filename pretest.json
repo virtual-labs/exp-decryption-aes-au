@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the purpose of key expansion in the AES decryption process?",
+      "answers": {
+        "a": "To add an additional layer of security",
+        "b": "To generate a set of round keys for subsequent decryption rounds",
+        "c": "To increase the size of the original encryption key",
+        "d": "To mix the columns of the state"
+      },
+      "explanations": {
+        "a": "Incorrect. Key expansion focuses on creating round keys rather than adding security layers.",
+        "b": "Correct. Key expansion generates round keys for subsequent decryption rounds.",
+        "c": "Incorrect. Key expansion does not increase the size of the original encryption key.",
+        "d": "Incorrect. Mixing columns is part of the Inverse MixColumns operation, not key expansion."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the initial round of AES decryption, what is added to the ciphertext?",
+      "answers": {
+        "a": "The first round key",
+        "b": "The last round key",
+        "c": "The expanded key",
+        "d": "The MixColumns operation result"
+      },
+      "explanations": {
+        "a": "Incorrect. The initial round adds the last round key, not the first.",
+        "b": "Correct. The last round key is added to the ciphertext in the initial round of decryption.",
+        "c": "Incorrect. The expanded key is used in key expansion, not added to the ciphertext.",
+        "d": "Incorrect. MixColumns is not added in the initial round but performed in the Inverse MixColumns operation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the Inverse MixColumns operation in the AES decryption process?",
+      "answers": {
+        "a": "To mix the columns of the state using a fixed matrix",
+        "b": "To shift the rows of the state to the right",
+        "c": "To replace each byte of the state with its inverse in the S-box",
+        "d": "To XOR the round key with the state"
+      },
+      "explanations": {
+        "a": "Correct. Inverse MixColumns reverses the MixColumns operation, mixing columns with the inverse of the fixed matrix.",
+        "b": "Incorrect. Shifting rows to the right is part of the Inverse ShiftRows operation.",
+        "c": "Incorrect. Inverse MixColumns does not involve the S-box; that is part of Inverse SubBytes.",
+        "d": "Incorrect. XORing the round key with the state is part of the AddRoundKey operation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

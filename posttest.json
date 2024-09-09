@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How many rounds of the inverse round transformation are performed during AES decryption with a 192-bit key?",
+      "answers": {
+        "a": "8 rounds",
+        "b": "10 rounds",
+        "c": "12 rounds",
+        "d": "14 rounds"
+      },
+      "explanations": {
+        "a": "Incorrect. The number of rounds for 192-bit key decryption is not 8.",
+        "b": "Incorrect. The correct number of rounds for 192-bit key decryption is not 10.",
+        "c": "Correct. AES decryption with a 192-bit key involves 12 rounds of the inverse round transformation.",
+        "d": "Incorrect. The number of rounds for 192-bit key decryption is not 14."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the Final Round in the AES decryption process?",
+      "answers": {
+        "a": "To generate the initial round key",
+        "b": "To perform the Inverse MixColumns operation",
+        "c": "To apply the Inverse ShiftRows transformation",
+        "d": "To complete the decryption by adding the final round key"
+      },
+      "explanations": {
+        "a": "Incorrect. The initial round key is generated during key expansion, not the Final Round.",
+        "b": "Incorrect. Inverse MixColumns is part of the inverse round transformation, not the Final Round.",
+        "c": "Incorrect. The Inverse ShiftRows transformation is part of the inverse round transformation.",
+        "d": "Correct. The Final Round involves Inverse SubBytes, Inverse ShiftRows, and adding the round key to complete decryption."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "During key expansion, how many rounds are generated for a 256-bit key in the AES decryption process?",
+      "answers": {
+        "a": "8 rounds",
+        "b": "10 rounds",
+        "c": "12 rounds",
+        "d": "14 rounds"
+      },
+      "explanations": {
+        "a": "Incorrect. The number of rounds for 256-bit key expansion is not 8.",
+        "b": "Incorrect. The correct number of rounds for 256-bit key expansion is not 10.",
+        "c": "Incorrect. The correct number of rounds for 256-bit key expansion is not 12.",
+        "d": "Correct. AES decryption with a 256-bit key involves generating 14 rounds during key expansion."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }
+  ]
+}
