@@ -51,6 +51,57 @@
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
+    },
+    {
+      "question": "How many decryption rounds does AES-128 use?",
+      "answers": {
+        "a": "8",
+        "b": "10",
+        "c": "12",
+        "d": "14"
+      },
+      "explanations": {
+        "a": "Incorrect. AES-128 does not use 8 rounds.",
+        "b": "Correct. AES-128 uses 10 decryption rounds.",
+        "c": "Incorrect. 12 rounds are used for AES-192.",
+        "d": "Incorrect. 14 rounds are used for AES-256."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In AES decryption, round keys are applied:",
+      "answers": {
+        "a": "In the same order as encryption",
+        "b": "In reverse order of encryption",
+        "c": "Randomly",
+        "d": "Without using XOR"
+      },
+      "explanations": {
+        "a": "Incorrect. Round keys are not applied in the same order as encryption.",
+        "b": "Correct. In AES decryption, round keys are applied in reverse order of encryption.",
+        "c": "Incorrect. Round keys are applied in a specific reverse order, not randomly.",
+        "d": "Incorrect. Round keys are still used with XOR operations in decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which operation is not used in the final round of AES decryption?",
+      "answers": {
+        "a": "Inverse SubBytes",
+        "b": "Inverse ShiftRows",
+        "c": "Inverse MixColumns",
+        "d": "AddRoundKey"
+      },
+      "explanations": {
+        "a": "Incorrect. Inverse SubBytes is used in the final round.",
+        "b": "Incorrect. Inverse ShiftRows is used in the final round.",
+        "c": "Correct. Inverse MixColumns is not used in the final round of AES decryption.",
+        "d": "Incorrect. AddRoundKey is used in the final round."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
