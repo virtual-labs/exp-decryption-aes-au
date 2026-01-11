@@ -51,6 +51,57 @@
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the InvSubBytes step in AES decryption?",
+      "answers": {
+        "a": "To rearrange the rows of the state",
+        "b": "To reverse the column mixing",
+        "c": "To undo the non-linear substitution applied during encryption",
+        "d": "To apply the round key into the state"
+      },
+      "explanations": {
+        "a": "Incorrect. Rearranging rows is part of InvShiftRows, not InvSubBytes.",
+        "b": "Incorrect. Reversing column mixing is part of InvMixColumns.",
+        "c": "Correct. InvSubBytes undoes the non-linear substitution applied during SubBytes in encryption.",
+        "d": "Incorrect. Applying the round key is part of AddRoundKey."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The InvShiftRows operation in AES decryption:",
+      "answers": {
+        "a": "Shifts rows to the left",
+        "b": "Shifts rows to the right",
+        "c": "Replaces bytes using the S-box",
+        "d": "Eliminates MixColumns"
+      },
+      "explanations": {
+        "a": "Incorrect. InvShiftRows shifts rows to the right, not left.",
+        "b": "Correct. The InvShiftRows operation shifts rows to the right.",
+        "c": "Incorrect. Replacing bytes using the S-box is part of InvSubBytes.",
+        "d": "Incorrect. InvShiftRows does not eliminate MixColumns."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The decryption S-box (inverse S-box) is used in which step?",
+      "answers": {
+        "a": "AddRoundKey",
+        "b": "InvSubBytes",
+        "c": "InvMixColumns",
+        "d": "InvShiftRows"
+      },
+      "explanations": {
+        "a": "Incorrect. AddRoundKey does not use the S-box.",
+        "b": "Correct. The inverse S-box is used in the InvSubBytes step.",
+        "c": "Incorrect. InvMixColumns does not use the S-box.",
+        "d": "Incorrect. InvShiftRows does not use the S-box."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
