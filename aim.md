@@ -1,0 +1,2 @@
+### Aim of the experiment
+To understand the complete process of ciphertext decryption in the Advanced Encryption Standard (AES) using a visual simulator, by observing and analyzing each inverse transformation step—including Inverse SubBytes, Inverse ShiftRows, Inverse MixColumns, and AddRoundKey—to clearly visualize how AES reconstructs the original plaintext from the ciphertext through its structured and reversible round operations.
