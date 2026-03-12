@@ -1,6 +1,6 @@
 ### Procedure
 
-Welcome to Experiment 6: AES Plaintext Decryption Simulator! Transitioning from DES, delve into the Advanced Encryption Standard (AES) and its Decryption Process
+ AES Plaintext Decryption Simulator! Transitioning from DES, delve into the Advanced Encryption Standard (AES) and its Decryption Process
 
 → Initiate by entering the Hex Value of encrypted ciphertext from experiment 5.
 

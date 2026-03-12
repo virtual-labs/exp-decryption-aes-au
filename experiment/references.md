@@ -1,6 +1,6 @@
-# Experiment 6: AES Ciphertext Decryption
 
-## References
+
+### References
 
 1. Stallings, W. (2017). *Cryptography and Network Security*, 7th Edition. Pearson Education India.
 
